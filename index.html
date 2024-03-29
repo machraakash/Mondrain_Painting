@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 98vh;
+    }
+    .grid-container{
+      display: grid;
+      gap: 9px;
+      grid-template: 414px 130px 155px 20px / 320px 198px 153px 50px ;
+      background-color: #000;
+    }
+    .box{
+      background-color: #F0F1EC;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .top-right{
+      grid-area: 1 / 2 / 2 / 5;
+    }
+    .middle-left{
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .middle-middle{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .bottom-right{
+      grid-row: 3/ 5;
+    }
+    .middle-right-top{
+      background-color: #004592;
+    }
+    .bottom-middle-left{
+      background-color: #F9D01E;
+    }
+    .bottom-middle-right{
+      background-color: #232629;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="flex-container">
+      <div class="grid-container">
+        <div class="box red"></div>
+        <div class="box top-right"></div>
+        <div class="box middle-left"></div>
+        <div class="box middle-middle"></div>
+        <div class="box middle-right-top"></div>
+        <div class="box bottom-right"></div>
+        <div class="box bottom-left"></div>
+        <div class="box bottom-middle-left"></div>
+        <div class="box bottom-middle-right"></div>
+      </div>
+    </div>
+  </body>
+</html>
